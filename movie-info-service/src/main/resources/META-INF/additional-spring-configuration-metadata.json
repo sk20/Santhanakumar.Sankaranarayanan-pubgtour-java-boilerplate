@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "api.key",
+    "type": "java.lang.String",
+    "description": "A description for 'api.key'"
+  },
+  {
+    "name": "REST_API_URL_WITH_KEY",
+    "type": "java.lang.String",
+    "description": "A description for 'REST_API_URL_WITH_KEY'"
+  },
+  {
+    "name": "REST_API_URL_WITH_KEY",
+    "type": "java.lang.String",
+    "description": "A description for 'REST_API_URL_WITH_KEY'"
+  }
+]}

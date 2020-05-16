@@ -1,0 +1,13 @@
+<div class="row text-left">
+    <div class="col-sm-4" #messageEl *ngFor="let moviesLists of moviesList; let num = index">
+      <div class="thumbnail">
+        <img src="{{ moviesLists.coverUrl}}" style="width: 150px;  height:200px" />
+        <p><strong>{{moviesLists.title}}</strong></p>
+        <p>Author :{{moviesLists.author}}</p>
+        <button mat-raised-button class="btn-favourite" (click)="addRemoveCollection(num)">{{getButtonText(moviesLists.movieId)}}</button>
+        <a [routerLink]="['/viewMovie']" style="margin-left: 20px; color:brown;" class="btn btn-link">View More</a>
+      </div>
+      
+    </div>
+    <mat-divider></mat-divider>
+  </div>

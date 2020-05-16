@@ -1,0 +1,13 @@
+<div class="row text-left">
+  <div class="col-sm-4" #messageEl *ngFor="let movLst of moviesList; let num = index">
+    <div class="thumbnail">
+      <a href="#">
+      <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{ movLst.poster_path}}" style="width: 150px;  height:200px" /></a>
+      <p><strong>{{ movLst.name }}</strong></p>
+      <p>Desc :{{ movLst.desc }}</p>
+      <a>Add To Collection</a>
+      <a [routerLink]="['/viewMovie']" style="margin-left: 20px; color:brown;" class="btn btn-link">View More</a>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+</div>

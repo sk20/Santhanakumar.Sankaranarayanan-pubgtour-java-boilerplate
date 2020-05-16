@@ -1,0 +1,52 @@
+body mat-toolbar.mat-toolbar button.mat-button div.mat-button-focus-overlay {
+    background-color:red
+    }
+.navbar {
+    top:50%;
+    left: 0;
+    width: 100% !important;
+    background-color:#1e598a !important;
+    display: flex;
+}
+.md-button-right .button-group {
+    position: absolute;
+    right: 0px;
+    margin: 0;
+  }
+  md-input-container.md-button-right > md-icon + input, md-input-container.md-button-right > md-icon + textarea{
+    margin-right: 100px;
+  }
+.mat-button-focus-overlay {
+    background-color: red !important;
+ }
+.myhighlighter {
+    width: 100%;
+    text-align: center;
+    background-color: white !important;
+    max-width: absolute
+    ;
+}
+
+h4 {
+    color: white;
+    padding-right: 10vh;
+}
+
+.text-center {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mat-text-search-bar {
+    background-repeat: no-repeat;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: none;
+    background-color: white !important;
+}
+.mat-button.mat-primary {
+    background-color: white;
+  } 
+  

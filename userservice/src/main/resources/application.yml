@@ -1,0 +1,12 @@
+#server:
+#    port: 8087
+#
+#spring:
+# data:
+#   mongodb:
+#    #username: user
+#    #password: password
+#    database: userdb
+#    port: 27017
+#    host: localhost
+    

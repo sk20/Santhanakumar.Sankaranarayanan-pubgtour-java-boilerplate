@@ -1,0 +1,54 @@
+.book-item-card
+{
+    margin-top: 10vh;
+    margin-left:  5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-deck-scrollable{
+    flex-direction: row;
+    max-width: 40%;
+
+  }
+  .card-deck-scrollable{
+    flex-direction: row;
+
+      flex: 0 0 40% !important;/*Change to any size you want*/
+      max-width: 40%;
+    
+  }
+  body {
+    padding-top: 2rem;
+}
+
+@media (min-width: 576px) {
+    .card-group.card-group-scroll {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .card-group.card-group-scroll > .card {
+        flex-basis: 35%;
+    }
+}
+.btn-favourite{
+  background-color: #1e598a;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right:10px;
+}
+.logo {
+    font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+ .col-sm-4{
+   background-attachment: fixed;
+
+ }

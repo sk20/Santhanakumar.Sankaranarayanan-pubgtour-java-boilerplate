@@ -1,0 +1,38 @@
+<div class="text-center" style="height: 50px; margin-top: 30px; margin-bottom:30px ;">
+    <span>Welcome to Movie App</span>
+    <br>
+    <span><h5>Peace comes with Entertainment !!!</h5></span>
+  </div>
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
+    <a class="navbar-brand" mat-button [routerLink]="['']">Movie App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+      aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a mat-button [routerLink]="['/movie']" class="nav-link">Movies
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" mat-button [routerLink]="['/favourite']">My Collections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" mat-button [routerLink]="['/favourite']">Popular Movies</a>
+        </li>
+        <li class="nav-item">
+          <div class="row">
+            <div class="input-group input-group-lg col-sm-8 col-md-8">
+              <app-search-box (loading)="loading = $event" (results)="updateResults($event)"></app-search-box>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item" >
+          <a mat-button class="nav-link" [(ngModel)]="buttonName" class="nav-link"
+            (click)="onLogout()">{{buttonName}}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
